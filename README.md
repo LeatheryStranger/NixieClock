@@ -6,5 +6,5 @@ I got enamored with Nixie tubes as, it seems, every other tinkerer has these day
 * STLs - Files to print 3d printed parts
 * Instructions - Build instructions and Tips
 * Code - Software to control clock
-#References
+# References
 I relied heavily on parts sourced from the excellent http://idyl.io A big thank you to Tony and his excellent parts available at https://www.tindie.com/stores/tonyp7/
