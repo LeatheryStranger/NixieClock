@@ -5,6 +5,6 @@ I got enamored with Nixie tubes as, it seems, every other tinkerer has these day
 * BoM - Bill of Materials
 * STLs - Files to print 3d printed parts
 * Instructions - Build instructions and Tips
-* Code - Software to control clock
+* Firmware - Code to control clock
 # References
 A big thank you to Tony and his excellent parts available at https://www.tindie.com/stores/tonyp7/
