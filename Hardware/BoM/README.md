@@ -1,5 +1,5 @@
 |   Part Number  |Quantity|Manufacturer|Description|Source|
-|:--------------:|--------|------------|-----------|-------|
+|--------------|--------|------------|-----------|-------|
 |N/A             | 4      | Yourself   | Tonyp7 Serial Nixie Driver  | you can find the plans [here](https://github.com/tonyp7/SerialNixieDriver)|
 |  IN-12a |4 | N/A  |  Nixie Tubes |  [Tubes-Store](https://tubes-store.com) |
 | PL31A-P  |  4 | Soviet   |  Nixie Tube Socket | [Tubes-Store](https://tubes-store.com)  |
