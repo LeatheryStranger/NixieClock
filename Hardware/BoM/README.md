@@ -4,7 +4,7 @@
 |  IN-12a |4 | N/A  |  Nixie Tubes |  [Tubes-Store](https://tubes-store.com) |
 | PL31A-P  |  4 | Soviet   |  Nixie Tube Socket | [Tubes-Store](https://tubes-store.com)  |
 | 63391-1-ND   | 48  |   	TE Connectivity AMP Connectors |  Quick connects for nixie sockets | [Digikey](https://www.digikey.com/products/en?keywords=63391-1-ND)  |
-| 0721248989307|1|(PLusivo)[www.plusivo.com)| 30AWG hookup wire for Nixie connections| [Amazon Page](https://www.amazon.com/gp/product/B07T1MR9C4)|
+| 0721248989307|1|[Plusivo](www.plusivo.com)| 30AWG hookup wire for Nixie connections| [Amazon Page](https://www.amazon.com/gp/product/B07T1MR9C4)|
 |WK106| 1| Elenco | 22Gauge solid wire for all other connections| | just easier to use for and a bit more robust for higher current draw before voltage boost|
 | 3500 | 1 | [Adafruit](www.adafruit.com) | Trinket M0 Microcontroller | [Adafruit Trinket M0](https://www.adafruit.com/product/3500#description)|
 | 3013 | 1 | [Adafruit](www.adafruit.com) | DS3231 RTC breakout | [Adafruit DS3231](https://www.adafruit.com/product/3013)|
