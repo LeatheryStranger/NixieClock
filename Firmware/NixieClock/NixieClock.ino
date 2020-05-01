@@ -57,12 +57,7 @@ void setup () {
   Wire.endTransmission();
   
   if (rtc.lostPower()) {   //rtc.lostPower()
-    Serial.println("RTC lost power, lets set the time!");
-
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-    nowish = rtc.now();
-    utc = myTZ.toUTC(nowish.unixtime());
-    rtc.adjust(utc);
+    ResetClock();
   }
 }
 
@@ -102,7 +97,7 @@ void loop () {
   TimeVal[3] = MinuteOnes;
   driver.send(TimeVal, NB_TUBES);
 
-//Nixie digit cycle for descaling
+//Nixie digit cycle for cleaning
   if (i >= 900){
     for (uint8_t j = 0; j < 10; j++) {
       for (uint8_t k = 0; k < 4; k++) {
@@ -113,11 +108,6 @@ void loop () {
     }
     i = 0;
     return;
-  }
-  if (Serial.available() > 0) {
-    int incomingbyte = Serial.read();
-    Serial.print(incomingbyte);
-    ResetClock();
   }
   i++;
   delay(1000);
