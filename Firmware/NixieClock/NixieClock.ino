@@ -1,6 +1,6 @@
-// Date and time functions using a DS3231 RTC connected via I2C and Wire lib
-#include "RTClib.h"
-#include "SerialNixieDriver.h"
+
+#include "RTClib.h"   //Adafruit fork for DS3231 support
+#include "SerialNixieDriver.h" //from user TonyP7
 #include "Timezone.h"
 #include "Wire.h" 
 
@@ -18,7 +18,7 @@ TimeChangeRule myDST = {"EDT", Second, Sun, Mar, 2, -240};    //Daylight time = 
 TimeChangeRule mySTD = {"EST", First, Sun, Nov, 2, -300};     //Standard time = UTC - 5 hours
 Timezone myTZ(myDST, mySTD);
 
-//Individual Characters for Nixie Time
+//Individual Characters for Nixie Tubes
 int MinuteOnes = 0;
 int MinuteTens = 0;
 int HourOnes = 0;
@@ -31,8 +31,8 @@ int dataPin = 4;
 
 //Nixie Clock Variables
 uint8_t TimeVal[4]; //Array for sending Values
-const uint8_t NB_TUBES = 4;
-int i = 0;  //count for nixie scrubbing
+const uint8_t NB_TUBES = 4;  //Nuber of tubes
+int i = 0;  //count for nixie de-poisoning nixies
 
 void setup () {
 
@@ -49,20 +49,16 @@ void setup () {
     while (1);
   }
 
-  //Seeting EOSC bit to 0 to enable battery operation.
+  //Setting EOSC bit to 0 to enable battery operation on RTC DS3231
   Wire.begin();
   Wire.beginTransmission(0x68);
   Wire.write(0xE);
   Wire.write(0x00);
   Wire.endTransmission();
   
+  //If battery dies on Nixie reset to approximate UTC time from when script was compiled.
   if (rtc.lostPower()) {   //rtc.lostPower()
-    Serial.println("RTC lost power, lets set the time!");
-
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-    nowish = rtc.now();
-    utc = myTZ.toUTC(nowish.unixtime());
-    rtc.adjust(utc);
+    ResetClock();
   }
 }
 
@@ -102,7 +98,7 @@ void loop () {
   TimeVal[3] = MinuteOnes;
   driver.send(TimeVal, NB_TUBES);
 
-//Nixie digit cycle for descaling
+//Nixie digit cycle for cleaning
   if (i >= 900){
     for (uint8_t j = 0; j < 10; j++) {
       for (uint8_t k = 0; k < 4; k++) {
@@ -113,11 +109,6 @@ void loop () {
     }
     i = 0;
     return;
-  }
-  if (Serial.available() > 0) {
-    int incomingbyte = Serial.read();
-    Serial.print(incomingbyte);
-    ResetClock();
   }
   i++;
   delay(1000);
