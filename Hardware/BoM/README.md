@@ -14,4 +14,4 @@
 |  	GST18A12-P1J | 1 | [Meanwell](https://www.meanwellusa.com/) | AC/DC power supply 12V/18W | [Digikey](https://www.digikey.com/products/en?keywords=1866-2052-ND)|
 | N/A | 22 | N/A | M3x6mm Machine Screws | [Bolt Depot](https://www.boltdepot.com/Catalog.aspx?gclid=Cj0KCQjwka_1BRCPARIsAMlUmEpf-qP8lrY5d7OFf96GzSNQEXNjat4Qg3AjAbasrSeHtTFBb57ZHrwaAlMAEALw_wcB) |
 | N/A | 20 | N/A | M2.5x4mm Machine Scews | [Bolt Depot](https://www.boltdepot.com/Catalog.aspx?gclid=Cj0KCQjwka_1BRCPARIsAMlUmEpf-qP8lrY5d7OFf96GzSNQEXNjat4Qg3AjAbasrSeHtTFBb57ZHrwaAlMAEALw_wcB)|
-| 1365868 | 1 | [Loctite](https://www.loctiteproducts.com/en.html?utm_source=loctite.com&utm_medium=redirect&utm_campaign=301_redirect) | | 5-Minute Epoxy | Home Depot has it |
+| 1365868 | 1 | [Loctite](https://www.loctiteproducts.com/en.html?utm_source=loctite.com&utm_medium=redirect&utm_campaign=301_redirect) | 5-Minute Epoxy | Home Depot has it |
