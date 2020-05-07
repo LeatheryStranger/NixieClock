@@ -8,6 +8,7 @@
 |WK106| 1| Elenco | 22Gauge solid wire for all other connections| | just easier to use for and a bit more robust for higher current draw before voltage boost|
 | 3500 | 1 | [Adafruit](www.adafruit.com) | Trinket M0 Microcontroller | [Adafruit Trinket M0](https://www.adafruit.com/product/3500#description)|
 | 3013 | 1 | [Adafruit](www.adafruit.com) | DS3231 RTC breakout | [Adafruit DS3231](https://www.adafruit.com/product/3013)|
+| CR1220 | 1 | [Digikey](www.digikey.com) |  1220 Coin Cell 3v Battery | [Digikey CR1220](https://www.digikey.com/product-detail/en/panasonic-bsg/CR1220/P033-ND/269740) |
 | D24V5F3 | 1 | [Pololu](www.pololu.com) | Step down voltage regulator | [Pololu](https://www.pololu.com/product/2842)|
 | N/A | 1 | Idyl.io | 170V High Voltage Nixie Power Supply | [Tindie](https://www.tindie.com/products/tonyp7/170v-high-voltage-nixie-power-supply/#product-description) |
 |721AFMS | 1 | [switchcraft.com](www.switchcraft.com) | DC jack (fits psu below) | [Digikey](https://www.digikey.com/products/en?keywords=SC3721-ND) |
